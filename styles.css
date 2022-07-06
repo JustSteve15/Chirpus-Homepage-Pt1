@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+
 }
 
 ul {
@@ -9,11 +10,7 @@ ul {
     margin: 10px;
     align-content: space-evenly;
     text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
+    flex-direction: column-reverse;
 }
 
 .btn {
@@ -22,18 +19,67 @@ a {
     width: 100%;
     background-color: #000;
     color: #FFF;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.btn1 {
+    border: 10px solid #000;
+    align: center;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
     margin: auto;
     border-radius: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 h2 {
     margin: 20px;
 }
 
-p {
+#desc {
     border-left: 3px solid #000;
     padding: 20px;
     margin: 20px;
+    width: 50%;
+    display: inline-block;
+    
+}
+
+#circle {
+    background-color:rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 65%;
+    top: 100px;
+}
+
+#circle1 {
+    background-color:rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 75%;
+    top: 200px;
+}
+
+#circle2 {
+    background-color:rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 150px;
 }
 
 ul {
@@ -47,7 +93,71 @@ ul {
     margin: auto;
     width: 100%;
     word-spacing: normal;
-    
 }
 
+
+@media only screen and (min-width: 768px) {
+    
+    #chirpus {
+        flex-direction: row;
+        width: auto;
+        display: inline-block;
+    }
+
+    .main {
+        float: right;
+        flex-wrap: nowrap;
+        height: auto;
+        margin: auto;
+        }
+
+    .btn {
+            border: 10px solid #000;
+            align: center;
+            background-color: #000;
+            color: #FFF;
+            margin: auto;
+            border-radius: 20px; 
+        }  
+
+    .btn1 {
+            border: 10px solid #000;
+            align: center;
+            width: 50%;
+            background-color: #000;
+            color: #FFF;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+    #circle {
+            background-color:rgba(247, 136, 167, 0.6);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 65%;
+            top: 100px;
+        }
+        
+    #circle1 {
+            background-color:rgba(247, 193, 162, 0.7);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 75%;
+            top: 200px;
+        }
+        
+    #circle2 {
+            background-color:rgba(207, 130, 213, 0.6);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 80%;
+            top: 150px;
+        }
+}
 
